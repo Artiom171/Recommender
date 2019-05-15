@@ -17,7 +17,7 @@ public class SecProduct extends Product {
         this.preferedAgePiorityFirstMin = preferedAgePiorityFirstMin;
     }
 
-    public int GetPreferedAgePiorityFirstMax() {
+    public int getPreferedAgePiorityFirstMax() {
         return PreferedAgePiorityFirstMax;
     }
 
