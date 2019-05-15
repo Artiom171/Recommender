@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ProductHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
+            <state relative-caret-position="102">
+              <caret line="216" column="119" selection-start-line="216" selection-start-column="119" selection-end-line="216" selection-end-column="119" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,7 +70,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="WithInfo_byAgeAndGender" />
+        <entry key="$PROJECT_DIR$" value="WithInfo_byPriceDifference" />
       </map>
     </option>
   </component>
@@ -230,15 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557935184656</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="with Info - priceDifference">
+      <created>1557935702303</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1557935702303</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26872000" />
+    <option name="totallyTimeSpent" value="27363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -285,7 +291,8 @@
     <MESSAGE value="working version priceDifferential" />
     <MESSAGE value="working version pyCategory" />
     <MESSAGE value="with Info - ageAndGender" />
-    <option name="LAST_COMMIT_MESSAGE" value="with Info - ageAndGender" />
+    <MESSAGE value="with Info - priceDifference" />
+    <option name="LAST_COMMIT_MESSAGE" value="with Info - priceDifference" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -311,8 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProductHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
+        <state relative-caret-position="102">
+          <caret line="216" column="119" selection-start-line="216" selection-start-column="119" selection-end-line="216" selection-end-column="119" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

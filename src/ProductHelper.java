@@ -213,8 +213,8 @@ public class ProductHelper {
                 for (SecProduct item : secondProductsTV
                 ) {
 
-                    double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ((priceDif <= 700) && (item.getPopularity() >= 10)
+                    //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
+                    if ((item.getCategory().equals(item.getFirstProduct().getCategory())) && (item.getPopularity() >= 8)
                     ) {
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
@@ -227,8 +227,8 @@ public class ProductHelper {
                 System.out.println("Recomendations:");
                 for (SecProduct item : secondProductsFridge
                 ) {
-                    double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ((priceDif <= 500) && (item.getPopularity() >= 10)
+                    //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
+                    if ((item.getCategory().equals(item.getFirstProduct().getCategory())) && (item.getPopularity() >= 8)
                     ){
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
@@ -242,8 +242,8 @@ public class ProductHelper {
                 for (SecProduct item : secondProductsBook
                 ) {
 
-                    double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ((priceDif <= 100) && (item.getPopularity() >= 10)
+                    //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
+                    if ((item.getCategory().equals(item.getFirstProduct().getCategory())) && (item.getPopularity() >= 8)
                     ){
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
