@@ -5,6 +5,7 @@ public class SecProduct extends Product {
     //private double popularity;
     private String whereUsed;
     private double price;
+    private String whatGenderPriority;
 
     @Override
     public double getPrice() {
@@ -29,12 +30,13 @@ public class SecProduct extends Product {
     public SecProduct() {
     }
 
-    public SecProduct(Product firstProduct, String category, String name, String whereUsed, double price) {
+    public SecProduct(Product firstProduct, String category, String name, String whereUsed, double price, String whatGenderPriority) {
         this.firstProduct = firstProduct;
         this.category = category;
         this.name = name;
         this.whereUsed = whereUsed;
         this.price = price;
+        this.whatGenderPriority = whatGenderPriority;
     }
 
 

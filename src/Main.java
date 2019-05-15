@@ -6,26 +6,34 @@ public class Main {
     public static void main(String[] args) {
         menu();
     }
-    public static void menu(){
-        System.out.println("Testuojame duomenys is apklausos, vertinant populiaruma(reitinga) ir tai, kam yra naudojimas produktas is apklausos");
-        System.out.println();
-        System.out.println("Pasirinkite pirma preke");
-        System.out.println("1 - Televizorius PHILIPS 49PUS6412/12. 3840 x 2160 (4K UHD)");
-        System.out.println("2 - Šaldytuvas SAMSUNG RB33J3205SA/EF");
-        System.out.println("3 - Šerloko Holmso kolekciją");
-        System.out.println("0 - Baigti darba");
 
+    public static void menu() {
         Scanner scan = new Scanner(System.in);
-        int choice = scan.nextInt();
+        System.out.println("Apklausos imitavymas");
         System.out.println();
-        if(choice == 0){
+        System.out.println("Pasirinkite amziaus grupe");
+        System.out.println("1 -> 14-18m.");
+        System.out.println("2 -> 18-25m.");
+        System.out.println("3 -> 25-33m.");
+        System.out.println("4 -> 33-45m.");
+        System.out.println("5 -> 45m ir daugiau");
+        int age = scan.nextInt();
 
-        } else {
-            try {
-                ProductHelper.ProductHelper(choice);
-            } catch (InterruptedException e){
-                e.printStackTrace();
-            }
+
+        System.out.println();
+        System.out.println("Pasirinkite lyti");
+        System.out.println("1 -> Vyras");
+        System.out.println("2 -> Moteris");
+        int gender = scan.nextInt();
+
+        System.out.println();
+        try {
+            ProductHelper.ProductHelper(age, gender);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+
+
     }
+
 }
