@@ -44,7 +44,7 @@ public class ProductHelper {
                 "needs", 450.99, "women", 25, 99));
 
         secondProductsTV.add(new SecProduct(TV, "electronics", "Xbox One X 1TB žaidimų konsolė Black",
-                "entertainment-gaming", 420.99, "men", 14, 33));
+                "entertainment-gaming", 420.99, "men", 14 , 33 ));
         secondProductsFridge.add(new SecProduct(fridge, "electronics", "Xbox One X 1TB žaidimų konsolė Black",
                 "entertainment-gaming", 420.99, "men", 14, 33));
         secondProductsBook.add(new SecProduct(book, "electronics", "Xbox One X 1TB žaidimų konsolė Black",
@@ -213,10 +213,10 @@ public class ProductHelper {
                 for (SecProduct item : secondProductsTV
                 ) {
 
-                    double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if (item.getCategory() == item.getFirstProduct().getCategory() && item.getWhereUsed().contains("entertainment") && (priceDif <= 500)
-                             && (item.getPreferedAgePiorityFirstMax() >= age) &&
-                            (item.getPreferedAgePiorityFirstMin() <= age) || (item.getWhatGenderPriority() == gender)
+                    //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
+                    if ((item.getPreferedAgePiorityFirstMax() >= age) &&
+                            (item.getPreferedAgePiorityFirstMin() <= age) &&
+                            (item.getWhatGenderPriority().equals(gender))
                     ) {
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
@@ -229,11 +229,11 @@ public class ProductHelper {
                 System.out.println("Recomendations:");
                 for (SecProduct item : secondProductsFridge
                 ) {
-                    double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if (item.getCategory() == "domestic" && item.getWhereUsed().contains("kitchen") && (priceDif <= 150)
-                            && (item.getPreferedAgePiorityFirstMax() >= age) &&
-                            (item.getPreferedAgePiorityFirstMin() <= age) || (item.getWhatGenderPriority() == gender)
-                    ) {
+                    //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
+                    if ((item.getPreferedAgePiorityFirstMax() >= age) &&
+                            (item.getPreferedAgePiorityFirstMin() <= age) &&
+                            (item.getWhatGenderPriority().equals(gender))
+                    ){
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
                 }
@@ -246,11 +246,11 @@ public class ProductHelper {
                 for (SecProduct item : secondProductsBook
                 ) {
 
-                    double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if (item.getCategory() == "other" && item.getWhereUsed().contains("entertainment") && (priceDif <= 200)
-                             && (item.getPreferedAgePiorityFirstMax() >= age) &&
-                            (item.getPreferedAgePiorityFirstMin() <= age) || (item.getWhatGenderPriority() == gender)
-                    ) {
+                    //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
+                    if ((item.getPreferedAgePiorityFirstMax() >= age) &&
+                            (item.getPreferedAgePiorityFirstMin() <= age) &&
+                            (item.getWhatGenderPriority().equals(gender))
+                    ){
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
                 }

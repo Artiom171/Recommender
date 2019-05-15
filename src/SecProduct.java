@@ -67,7 +67,7 @@ public class SecProduct extends Product {
         this.price = price;
         this.whatGenderPriority = whatGenderPriority;
         this.preferedAgePiorityFirstMin = preferedAgePiorityFirstMin;
-        PreferedAgePiorityFirstMax = preferedAgePiorityFirstMax;
+        this.PreferedAgePiorityFirstMax = preferedAgePiorityFirstMax;
     }
 
     public Product getFirstProduct() {
