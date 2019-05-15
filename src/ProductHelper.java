@@ -214,7 +214,7 @@ public class ProductHelper {
                 ) {
 
                     //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ((item.getWhereUsed().equals(item.getFirstProduct().getWhereUsed())) && (item.getPopularity() >= 8)
+                    if ((item.getPopularity() >= 8)
                     ) {
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
@@ -228,7 +228,7 @@ public class ProductHelper {
                 for (SecProduct item : secondProductsFridge
                 ) {
                     //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ((item.getWhereUsed().equals(item.getFirstProduct().getWhereUsed())) && (item.getPopularity() >= 8)
+                    if ((item.getPopularity() >= 8)
                     ){
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
@@ -243,7 +243,7 @@ public class ProductHelper {
                 ) {
 
                     //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ((item.getWhereUsed().equals(item.getFirstProduct().getWhereUsed())) && (item.getPopularity() >= 8)
+                    if ((item.getPopularity() >= 8)
                     ){
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
