@@ -197,7 +197,7 @@ public class ProductHelper {
         secondProductsBook.add(new SecProduct(book, "domestic", "Samsung MS23F301TAK mikrobangų krosnelė",
                 "kitchen", 125.99, "non", 18, 45));
 
-        System.out.println("Pasirinikite viena preke");
+        System.out.println("Choose one item");
         System.out.println();
         System.out.println("1 - Televizorius PHILIPS 49PUS6412/12. 3840 x 2160 (4K UHD)");
         System.out.println("2 - Šaldytuvas SAMSUNG RB33J3205SA/EF");
@@ -213,7 +213,7 @@ public class ProductHelper {
                             && (item.getWhatGenderPriority() == gender) && (item.GetPreferedAgePiorityFirstMax() <= age) &&
                             (item.getPreferedAgePiorityFirstMin() >= age)
                     ) {
-                        System.out.println(item.getCategory().toUpperCase() + " kategorijos " + item.getName());
+                        System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
                 }
                 secondProductsTV.clear();
@@ -228,7 +228,7 @@ public class ProductHelper {
                             && (item.getWhatGenderPriority() == gender) && (item.GetPreferedAgePiorityFirstMax() <= age) &&
                             (item.getPreferedAgePiorityFirstMin() >= age)
                     ) {
-                        System.out.println(item.getCategory().toUpperCase() + " kategorijos " + item.getName());
+                        System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
                 }
                 secondProductsTV.clear();
@@ -243,7 +243,7 @@ public class ProductHelper {
                             && (item.getWhatGenderPriority() == gender) && (item.GetPreferedAgePiorityFirstMax() <= age) &&
                             (item.getPreferedAgePiorityFirstMin() >= age)
                     ) {
-                        System.out.println(item.getCategory().toUpperCase() + " kategorijos " + item.getName());
+                        System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
                 }
                 secondProductsTV.clear();
@@ -251,12 +251,12 @@ public class ProductHelper {
                 secondProductsBook.clear();
                 break;
             default:
-                System.out.println("Iveskite skaiciu 1,2 arba 3");
+                System.out.println("Please input 1,2 or 3");
                 break;
         }
 
 
-        System.out.println("Rekomendacijos Jums:");
+        System.out.println("Recomendations:");
 
 
         double start = System.currentTimeMillis();
@@ -264,8 +264,8 @@ public class ProductHelper {
 
         double elapsedTime = System.currentTimeMillis() - start;
         System.out.println();
-        System.out.println("Skaiciavimas padarytas per " + elapsedTime / 1000 + " sekundes");
-        System.out.println("Palaukite 3 sekundes");
+        System.out.println("Counter per " + elapsedTime + " miliseconds");
+        System.out.println("Please wait for 3 seconds");
         Thread.sleep(3000);
         System.out.println();
         Main.menu();
