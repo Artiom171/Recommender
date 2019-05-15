@@ -14,9 +14,9 @@ public class ProductHelper {
 
         Scanner scan = new Scanner(System.in);
 
-        Product TV = new Product("electronics", "Televizorius PHILIPS 49PUS6412/12. 3840 x 2160 (4K UHD)", "entertainment-tv", 1499.99);
+        Product TV = new Product("electronics", "Televizorius PHILIPS 49PUS6412/12. 3840 x 2160 (4K UHD)", "entertainment", 1499.99);
         Product fridge = new Product("domestic", "Šaldytuvas SAMSUNG RB33J3205SA/EF", "kitchen", 789.99);
-        Product book = new Product("other", "Šerloko Holmso kolekciją", "entertainment-konwlegde", 15.99);
+        Product book = new Product("other", "Šerloko Holmso kolekciją", "entertainment-knowledge", 15.99);
 
         firstProducts.add(TV);
         firstProducts.add(fridge);
@@ -214,7 +214,7 @@ public class ProductHelper {
                 ) {
 
                     //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ( item.getCategory().equals(item.getFirstProduct().getCategory())
+                    if ( item.getWhereUsed().contains(item.getFirstProduct().getWhereUsed())
                     ) {
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
@@ -228,7 +228,7 @@ public class ProductHelper {
                 for (SecProduct item : secondProductsFridge
                 ) {
                     //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ( item.getCategory().equals(item.getFirstProduct().getCategory())
+                    if ( item.getWhereUsed().equals(item.getFirstProduct().getWhereUsed())
                     ){
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
@@ -243,7 +243,7 @@ public class ProductHelper {
                 ) {
 
                     //double priceDif = abs(item.getFirstProduct().getPrice() - item.getPrice());
-                    if ( item.getCategory().equals(item.getFirstProduct().getCategory())
+                    if ( item.getWhereUsed().equals(item.getFirstProduct().getWhereUsed())
                     ){
                         System.out.println(item.getCategory().toUpperCase() + " category " + item.getName());
                     }
