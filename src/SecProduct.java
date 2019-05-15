@@ -6,6 +6,33 @@ public class SecProduct extends Product {
     private String whereUsed;
     private double price;
     private String whatGenderPriority;
+    private int preferedAgePiorityFirstMin;
+    private int PreferedAgePiorityFirstMax;
+
+    public int getPreferedAgePiorityFirstMin() {
+        return preferedAgePiorityFirstMin;
+    }
+
+    public void setPreferedAgePiorityFirstMin(int preferedAgePiorityFirstMin) {
+        this.preferedAgePiorityFirstMin = preferedAgePiorityFirstMin;
+    }
+
+    public int GetPreferedAgePiorityFirstMax() {
+        return PreferedAgePiorityFirstMax;
+    }
+
+    public void setGetPreferedAgePiorityFirstMax(int tPreferedAgePiorityFirstMax) {
+        this.PreferedAgePiorityFirstMax = PreferedAgePiorityFirstMax;
+    }
+
+    public String getWhatGenderPriority() {
+        return whatGenderPriority;
+    }
+
+    public void setWhatGenderPriority(String whatGenderPriority) {
+        this.whatGenderPriority = whatGenderPriority;
+    }
+
 
     @Override
     public double getPrice() {
@@ -30,15 +57,18 @@ public class SecProduct extends Product {
     public SecProduct() {
     }
 
-    public SecProduct(Product firstProduct, String category, String name, String whereUsed, double price, String whatGenderPriority) {
+    public SecProduct(Product firstProduct, String category, String name, String whereUsed,
+                      double price, String whatGenderPriority, int preferedAgePiorityFirstMin,
+                      int preferedAgePiorityFirstMax) {
         this.firstProduct = firstProduct;
         this.category = category;
         this.name = name;
         this.whereUsed = whereUsed;
         this.price = price;
         this.whatGenderPriority = whatGenderPriority;
+        this.preferedAgePiorityFirstMin = preferedAgePiorityFirstMin;
+        PreferedAgePiorityFirstMax = preferedAgePiorityFirstMax;
     }
-
 
     public Product getFirstProduct() {
         return firstProduct;

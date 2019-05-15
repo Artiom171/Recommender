@@ -9,22 +9,22 @@ public class Main {
 
     public static void menu() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Apklausos imitavymas");
-        System.out.println();
-        System.out.println("Pasirinkite amziaus grupe");
-        System.out.println("1 -> 14-18m.");
-        System.out.println("2 -> 18-25m.");
-        System.out.println("3 -> 25-33m.");
-        System.out.println("4 -> 33-45m.");
-        System.out.println("5 -> 45m ir daugiau");
-        int age = scan.nextInt();
+        System.out.println("Poll imitation");
+        System.out.println("Input 0 to exit");
 
+        Scanner inAge = new Scanner(System.in);
+        System.out.println();
+        System.out.println("Input your age");
+        int age = inAge.nextInt();
+        if(age == 0){
+            exit();
+        }
+        Scanner inGender = new Scanner(System.in);
 
         System.out.println();
-        System.out.println("Pasirinkite lyti");
-        System.out.println("1 -> Vyras");
-        System.out.println("2 -> Moteris");
-        int gender = scan.nextInt();
+        System.out.println("You belong to men or women?(input the answer:)");
+        String gender = inGender.nextLine();
+        gender.toLowerCase();
 
         System.out.println();
         try {
@@ -34,6 +34,10 @@ public class Main {
         }
 
 
+    }
+    public static void exit(){
+        System.out.println("Thank you for working with our program! Press Enter");
+        System.exit(0);
     }
 
 }
