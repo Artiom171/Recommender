@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/RecoM/ProductHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RecoM/ProductHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RecoM/SecProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RecoM/SecProduct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProductHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecProduct.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ProductHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
+            <state relative-caret-position="40">
+              <caret line="230" column="39" selection-start-line="230" selection-start-column="39" selection-end-line="230" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +71,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="strict" />
+        <entry key="$PROJECT_DIR$" value="byAgeAndGender" />
       </map>
     </option>
   </component>
@@ -167,7 +166,7 @@
       <workItem from="1557836598534" duration="1001000" />
       <workItem from="1557840773420" duration="84000" />
       <workItem from="1557914672464" duration="4997000" />
-      <workItem from="1557919763597" duration="8185000" />
+      <workItem from="1557919763597" duration="8331000" />
     </task>
     <task id="LOCAL-00001" summary="first commit. 1/2 work done">
       <created>1557924450330</created>
@@ -204,11 +203,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557928751262</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="working version">
+      <created>1557929899018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557929899018</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23263000" />
+    <option name="totallyTimeSpent" value="23409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -255,14 +261,15 @@
     <MESSAGE value="another commit" />
     <MESSAGE value="changes" />
     <MESSAGE value="finished, very strict algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished, very strict algorithm" />
+    <MESSAGE value="working version" />
+    <option name="LAST_COMMIT_MESSAGE" value="working version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ProductHelper.java</url>
-          <line>269</line>
+          <line>263</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -293,8 +300,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProductHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
+        <state relative-caret-position="40">
+          <caret line="230" column="39" selection-start-line="230" selection-start-column="39" selection-end-line="230" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
