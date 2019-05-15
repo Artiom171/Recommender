@@ -2,7 +2,7 @@ public class SecProduct extends Product {
     private Product firstProduct;
     private String category;
     private String name;
-    //private double popularity;
+    private double popularity;
     private String whereUsed;
     private double price;
     private String whatGenderPriority;
@@ -57,12 +57,13 @@ public class SecProduct extends Product {
     public SecProduct() {
     }
 
-    public SecProduct(Product firstProduct, String category, String name, String whereUsed,
+    public SecProduct(Product firstProduct, String category, String name, int popularity, String whereUsed,
                       double price, String whatGenderPriority, int preferedAgePiorityFirstMin,
                       int preferedAgePiorityFirstMax) {
         this.firstProduct = firstProduct;
         this.category = category;
         this.name = name;
+        this.popularity = popularity;
         this.whereUsed = whereUsed;
         this.price = price;
         this.whatGenderPriority = whatGenderPriority;
@@ -94,11 +95,11 @@ public class SecProduct extends Product {
         this.name = name;
     }
 
-//    public double getPopularity() {
-//        return popularity;
-//    }
-//
-//    public void setPopularity(double popularity) {
-//        this.popularity = popularity;
-//    }
+    public double getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(double popularity) {
+        this.popularity = popularity;
+    }
 }
